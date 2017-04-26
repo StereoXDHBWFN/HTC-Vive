@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Tests/Sphere im Raum.unity
+  isLoaded: 1
+  isActive: 1
