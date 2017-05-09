@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Tests/Sphere im Raum.unity
+- path: Assets/Tests/Movable_Objects.unity
   isLoaded: 1
   isActive: 1
