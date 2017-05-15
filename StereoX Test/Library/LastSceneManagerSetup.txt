@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Tests/Movable_Objects.unity
+- path: Assets/Tests/Movable_Objects_VRTK.unity
   isLoaded: 1
   isActive: 1
