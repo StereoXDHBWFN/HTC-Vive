@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Movable_Objects_VRTK.unity
+- path: Assets/Own_Scenes/Movable_Objects_VRTK.unity
   isLoaded: 1
   isActive: 1
