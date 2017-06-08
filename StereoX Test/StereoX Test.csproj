@@ -180,6 +180,13 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+    <Compile Include="Assets\VRInputModule\Scripts\IUILaserPointer.cs" />
+    <Compile Include="Assets\VRInputModule\Scripts\LaserPointerEventData.cs" />
+    <Compile Include="Assets\VRInputModule\Scripts\LaserPointerInputModule.cs" />
+    <Compile Include="Assets\VRInputModule\Scripts\ViveUILaserPointer.cs" />
+    <Compile Include="Assets\VRInputModule\_demo\Scripts\DemoLaserPointerTest.cs" />
+    <Compile Include="Assets\VRInputModule\_demo\Scripts\DemoMenu.cs" />
+    <Compile Include="Assets\VRInputModule\_demo\Scripts\GravityGun.cs" />
     <Compile Include="Assets\VRTK\Examples\Resources\Scripts\Archery\Arrow.cs" />
     <Compile Include="Assets\VRTK\Examples\Resources\Scripts\Archery\ArrowNotch.cs" />
     <Compile Include="Assets\VRTK\Examples\Resources\Scripts\Archery\ArrowSpawner.cs" />
@@ -391,6 +398,7 @@
     <Compile Include="Assets\VRTK\Scripts\Utilities\VRTK_Simulator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AdventureForge\CabinetsAndShelvesReadme.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
@@ -402,6 +410,7 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
+    <None Include="Assets\VRInputModule\Resources\LaserPointer.shader" />
     <None Include="Assets\VRTK\Scripts\Internal\Shaders\AdaptiveQualityDebugVisualization.shader" />
     <None Include="Assets\VRTK\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
     <None Include="Assets\VRTK\Scripts\Internal\Shaders\UIOverlay.shader" />
