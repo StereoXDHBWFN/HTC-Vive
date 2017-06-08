@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StereoX Test", "StereoX Test.csproj", "{8ADAD662-4010-0041-6A7F-DED84B3BF48C}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StereoX Test", "Assembly-CSharp.csproj", "{9ABBE8A4-D9B1-769F-703E-CC39750C239D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StereoX Test.Editor", "StereoX Test.Editor.csproj", "{2878AE01-EBD8-7187-1EBF-69F0AE05845E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StereoX Test", "Assembly-CSharp-Editor.csproj", "{E87CEA70-89CA-640A-ED9E-241E417B1B5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8ADAD662-4010-0041-6A7F-DED84B3BF48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8ADAD662-4010-0041-6A7F-DED84B3BF48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8ADAD662-4010-0041-6A7F-DED84B3BF48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8ADAD662-4010-0041-6A7F-DED84B3BF48C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2878AE01-EBD8-7187-1EBF-69F0AE05845E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2878AE01-EBD8-7187-1EBF-69F0AE05845E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2878AE01-EBD8-7187-1EBF-69F0AE05845E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2878AE01-EBD8-7187-1EBF-69F0AE05845E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ABBE8A4-D9B1-769F-703E-CC39750C239D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ABBE8A4-D9B1-769F-703E-CC39750C239D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ABBE8A4-D9B1-769F-703E-CC39750C239D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ABBE8A4-D9B1-769F-703E-CC39750C239D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E87CEA70-89CA-640A-ED9E-241E417B1B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E87CEA70-89CA-640A-ED9E-241E417B1B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E87CEA70-89CA-640A-ED9E-241E417B1B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E87CEA70-89CA-640A-ED9E-241E417B1B5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
