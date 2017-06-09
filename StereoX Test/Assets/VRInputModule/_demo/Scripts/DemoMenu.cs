@@ -14,7 +14,7 @@ namespace Wacki {
 
         public void SpawnCube()
         {
-            var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            var go = Instantiate(Resources.Load(".../Dateiconverter/OBJFiles/DalekFull/DalekFull.obj", typeof(GameObject))) as GameObject;
             go.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             go.transform.position = cubeSpawn.position;
             go.transform.rotation = cubeSpawn.rotation;
