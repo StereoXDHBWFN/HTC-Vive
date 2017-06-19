@@ -48,8 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\OBJImport\OBJLoader.cs" />
      <Compile Include="Assets\OBJImport\TextureLoader.cs" />
-     <Compile Include="Assets\Own_Scripts\ColliderToFit.cs" />
-     <Compile Include="Assets\Own_Scripts\FitCollider.cs" />
      <Compile Include="Assets\Own_Scripts\ObjImporter.cs" />
      <Compile Include="Assets\Own_Scripts\SpawnObject.cs" />
      <Compile Include="Assets\Own_Scripts\ToggleLaserpointer.cs" />
@@ -155,6 +153,20 @@
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+     <Compile Include="Assets\VRCapture\Demo\Scripts\ReplayObjectController.cs" />
+     <Compile Include="Assets\VRCapture\Demo\Scripts\RotationAround.cs" />
+     <Compile Include="Assets\VRCapture\Demo\Scripts\VRReplayDemoUI.cs" />
+     <Compile Include="Assets\VRCapture\Demo\Scripts\VideoCaptureDemoUI.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRCapture.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRCaptureAudio.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRCaptureScreenshot.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRCaptureVideo.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRInput\HTCViveInput.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRInput\StandaloneInput.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRInput\VRDevice.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRReplay.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRReplayAuto.cs" />
+     <Compile Include="Assets\VRCapture\Scripts\VRUtils.cs" />
      <Compile Include="Assets\VRInputModule\Scripts\IUILaserPointer.cs" />
      <Compile Include="Assets\VRInputModule\Scripts\LaserPointerEventData.cs" />
      <Compile Include="Assets\VRInputModule\Scripts\LaserPointerInputModule.cs" />
@@ -375,6 +387,7 @@
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
      <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
+     <None Include="Assets\VRCapture\Shaders\Cubemap2Equirect.shader" />
      <None Include="Assets\VRInputModule\Resources\LaserPointer.shader" />
      <None Include="Assets\VRTK\Scripts\Internal\Shaders\UIOverlay.shader" />
      <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
