@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using VRTK.SecondaryControllerGrabActions;
 using VRTK.GrabAttachMechanics;
 using VRTK;
-
+using System;
+using System.IO;
 
 public class SpawnObject : MonoBehaviour
 {
@@ -39,36 +40,23 @@ public class SpawnObject : MonoBehaviour
 
     public Transform SpawnPoint;
     public Material newMaterialRef;
-    [Tooltip("bla")]
-    public bool cube = false;
-    [Tooltip("bla")]
-    public bool dalek = false;
-    [Tooltip("bla")]
-    public bool torus = false;
 
     private GameObject obj;
-    private string dalekpath = "../Dateiconverter/OBJFiles/DalekFull/DalekFull.obj";
-    private string large_torus_path = "../Dateiconverter/OBJFiles/large/large.obj";
-    private string cubepath = "../Dateiconverter/OBJFiles/Cube/cube.obj";
+    private string[] paths;
+    private bool[] activeButton;
+
+    void Start ()
+    {
+        paths = GetFilesToButton.getPaths();
+        activeButton = new bool[paths.Length];
+    }
+
     public void SpawnObj()
     {
-        if (cube)
-        {
-            obj = OBJLoader.LoadOBJFile(cubepath);
-        }
-        else if (dalek)
-        {
-            obj = OBJLoader.LoadOBJFile(dalekpath);
-        }
-        else if (torus)
-        {
-            obj = OBJLoader.LoadOBJFile(large_torus_path);
-        }
-        else
-        {
-            obj = new GameObject();
-        }
-        
+        int index_of_selected = Array.IndexOf(activeButton, true);
+        string[] files = Directory.GetFiles(paths[index_of_selected], "*.obj");
+        Debug.Log(files[0]);
+        obj = OBJLoader.LoadOBJFile(files[0]);
 
         obj.transform.position = SpawnPoint.position;
         obj.transform.rotation = SpawnPoint.rotation;
@@ -87,50 +75,30 @@ public class SpawnObject : MonoBehaviour
 
     }
 
-    public void toggleCube()
+    public void toggle(int index)
     {
-        cube = !cube;
-        if (cube)
+        print("func "+ index);
+        bool state = activeButton[index];
+        for (int i = 0; i < activeButton.Length; i++)
         {
-            GameObject.Find("CubeToggle").GetComponent<Image>().color = Color.red;
-            dalek = false;
-            GameObject.Find("DalekToggle").GetComponent<Image>().color = Color.white;
-            GameObject.Find("TorusToggle").GetComponent<Image>().color = Color.white;
+            activeButton[i] = false;
         }
-        else
+        if (!state)
         {
-            GameObject.Find("CubeToggle").GetComponent<Image>().color = Color.white;
+            activeButton[index] = true;
         }
-    }
-    public void toggleDalek()
-    {
-        dalek = !dalek;
-        if (dalek)
+        for (int i = 0; i < activeButton.Length; i++)
         {
-            GameObject.Find("DalekToggle").GetComponent<Image>().color = Color.red;
-            cube = false;
-            GameObject.Find("CubeToggle").GetComponent<Image>().color = Color.white;
-            GameObject.Find("TorusToggle").GetComponent<Image>().color = Color.white;
+            if(activeButton[i])
+            {
+                GameObject.Find("Button "+i).GetComponent<Image>().color = Color.red;
+            }
+            else
+            {
+                GameObject.Find("Button "+i).GetComponent<Image>().color = Color.white;
+            }
         }
-        else
-        {
-            GameObject.Find("DalekToggle").GetComponent<Image>().color = Color.white;
-                    }
-    }
-    public void toggleTorus()
-    {
-        torus = !torus;
-        if (torus)
-        {
-            GameObject.Find("TorusToggle").GetComponent<Image>().color = Color.red;
-            cube = false;
-            GameObject.Find("CubeToggle").GetComponent<Image>().color = Color.white;
-            GameObject.Find("DalekToggle").GetComponent<Image>().color = Color.white;
-        }
-        else
-        {
-            GameObject.Find("TorusToggle").GetComponent<Image>().color = Color.white;
-        }
-    }
 
+    }
+   
 }

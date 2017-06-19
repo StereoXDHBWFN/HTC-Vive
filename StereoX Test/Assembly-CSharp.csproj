@@ -48,8 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\OBJImport\OBJLoader.cs" />
      <Compile Include="Assets\OBJImport\TextureLoader.cs" />
-     <Compile Include="Assets\Own_Scripts\ColliderToFit.cs" />
-     <Compile Include="Assets\Own_Scripts\FitCollider.cs" />
+     <Compile Include="Assets\Own_Scripts\GetFilesToButton.cs" />
      <Compile Include="Assets\Own_Scripts\ObjImporter.cs" />
      <Compile Include="Assets\Own_Scripts\SpawnObject.cs" />
      <Compile Include="Assets\Own_Scripts\ToggleLaserpointer.cs" />
